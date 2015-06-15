@@ -12,7 +12,9 @@ body {
 /* Main Styles */
 
 body {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Roboto', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	font-weight: 400;
 }
 
 /* Navigation */
@@ -40,8 +42,8 @@ nav {
 }
 
 .nav-links,
-.nav-links li,
-.nav-links a {
+.links,
+.links a {
 	display: inline-block;
 	height: 39px;
 }
@@ -55,24 +57,29 @@ nav {
 	float: right;
 }
 
-.nav-links li {
+.links {
 	padding: 0 0.75em;
+	letter-spacing: 0.03em;
 }
 
-.nav-links a:hover,
-.nav-links span:hover {
-	color: #333;
-}
-
-.nav-links a {
+.links a {
+	-webkit-transition: color 600ms ease;
+    -moz-transition: color 600ms ease;
+    -o-transition: color 600ms ease;
+    transition: color 600ms ease;
 	color: #828993;
 	padding-top: 13px;
 	text-decoration: none;
 }
 
-.nav-links span {
+.links a:hover {
+	color: #333;
+	cursor: pointer;
+}
+
+.links > .active {
 	color: #4B5057;
-	font-weight: 700;
+	font-weight: 500;
 }
 
 @media (min-width: 600px) {
