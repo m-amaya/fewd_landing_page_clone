@@ -5,11 +5,19 @@ body {
 	min-height: 3000px;
 }
 
-/*nav {
+/*.masthead {
 	border: 1px solid Chocolate;
 }*/
 
 /* Main Styles */
+
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
 
 body {
 	font-family: 'Roboto', sans-serif;
@@ -19,17 +27,14 @@ body {
 
 /* Navigation */
 
-* {
-	box-sizing: border-box;
-}
-
 nav {
 	background-color: #fff;
 	position: fixed;
 	width: 100%;
+	z-index: 99;
 }
 
-.nav-container {
+.container {
 	margin: 0 auto;
 	min-width: 40rem;
 	min-height: 70px;
@@ -48,10 +53,6 @@ nav {
 	height: 39px;
 }
 
-.logo {
-	float: left;
-}
-
 .nav-links {
 	list-style: none;
 	float: right;
@@ -64,7 +65,7 @@ nav {
 
 .links a {
 	-webkit-transition: color 600ms ease;
-    -moz-transition: color 600ms ease;
+    -moz-transition: color 500ms ease;
     -o-transition: color 600ms ease;
     transition: color 600ms ease;
 	color: #828993;
@@ -82,8 +83,52 @@ nav {
 	font-weight: 500;
 }
 
+/* Cover Image */
+
+.masthead {
+	position: absolute;
+	top: 70px;
+	width: 100%;
+	min-height: 665px;
+	background: #eee url("../img/cover.jpg") center center no-repeat;
+	background-size: cover;
+	color: #fff;
+}
+
+.masthead h1,
+.masthead h2 {
+	width: 100%;
+	text-align: center;
+	font-weight: 300;
+}
+
+.masthead h1 {
+	margin-top: 15.5rem;
+	margin-bottom: 0;
+	font-size: 3.125rem;
+}
+
+.masthead h2 {
+	margin-top: 1.25rem;
+	margin-bottom: 0;
+	font-size: 1.563rem;
+}
+
+.masthead button {
+	display: block;
+	border: none;
+	border-radius: 4px;
+	background-color: #F95634;
+	font-size: 1.2rem;
+	padding: 16px 24px;
+	margin: 2rem auto 0;
+}
+
+/* Media Queries */
+
 @media (min-width: 600px) {
-	.nav-container {
+	.container {
 		max-width: 60rem;
 	}
 }
+
