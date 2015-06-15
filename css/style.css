@@ -1,0 +1,82 @@
+/* TEMP STYLES */
+
+body {
+	background-color: LightGray;
+	min-height: 3000px;
+}
+
+/*nav {
+	border: 1px solid Chocolate;
+}*/
+
+/* Main Styles */
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+/* Navigation */
+
+* {
+	box-sizing: border-box;
+}
+
+nav {
+	background-color: #fff;
+	position: fixed;
+	width: 100%;
+}
+
+.nav-container {
+	margin: 0 auto;
+	min-width: 40rem;
+	min-height: 70px;
+	padding: 0 2%;
+}
+
+.logo,
+.nav-links {
+	margin-top: 13px;
+}
+
+.nav-links,
+.nav-links li,
+.nav-links a {
+	display: inline-block;
+	height: 39px;
+}
+
+.logo {
+	float: left;
+}
+
+.nav-links {
+	list-style: none;
+	float: right;
+}
+
+.nav-links li {
+	padding: 0 0.75em;
+}
+
+.nav-links a:hover,
+.nav-links span:hover {
+	color: #333;
+}
+
+.nav-links a {
+	color: #828993;
+	padding-top: 13px;
+	text-decoration: none;
+}
+
+.nav-links span {
+	color: #4B5057;
+	font-weight: 700;
+}
+
+@media (min-width: 600px) {
+	.nav-container {
+		max-width: 60rem;
+	}
+}
