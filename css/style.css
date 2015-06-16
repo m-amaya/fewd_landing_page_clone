@@ -1,12 +1,9 @@
 /* TEMP STYLES */
 
-body {
-	/*background-color: LightGray;*/
-	min-height: 3000px;
-}
-
-body {
-	border: 1px solid Chocolate;
+.social .container,
+.icons,
+.icons li {
+	/*border: 1px solid Chocolate;*/
 }
 
 /* Main Styles */
@@ -29,7 +26,8 @@ nav,
 .masthead,
 h1,
 h2,
-.cases {
+.cases,
+.social {
 	width: 100%;
 }
 
@@ -52,12 +50,18 @@ h3 {
 	font-size: 1.563rem;
 }
 
+h4 {
+	font-weight: 400;
+	box-sizing: border-box;
+}
+
 /* Navigation */
 
 nav {
 	background-color: #fff;
 	position: fixed;
 	z-index: 99;
+	border-bottom: 1px solid #eaebec;
 }
 
 .container {
@@ -157,10 +161,7 @@ nav {
 .cases {
 	position: absolute;
 	top: 735px;
-}
-
-.page-content {
-	padding: 5.875rem 0 0;
+	padding: 5.875rem 0 10rem;
 }
 
 .devices {
@@ -172,6 +173,51 @@ nav {
 	float: left;
 	width: 30%;
 	margin: 0 1%;
+}
+
+/* Footer */
+
+.social {
+	position: absolute;
+	top: 1355px;
+	padding: 5.875rem 0 10rem;
+}
+
+.social > .container {
+	border-top: 1px solid #eaebec;
+}
+
+.icons {
+	list-style: none;
+	padding: 0;
+}
+
+.icons li {
+	display: inline-block;
+	margin: 0 0.5rem;
+	padding: 0.5rem;
+	width: 2.325rem;
+	height: 2.325rem;
+	border-radius: 50%;
+	border: 1px solid #eaebec;
+}
+
+.social .twitter {
+	color: #55acee;
+}
+
+.social .facebook {
+	color: #4c66a4;
+}
+
+.social .instagram {
+	color: #3f729b;
+}
+
+.social .copy {
+	font-size: 0.9rem;
+	font-weight: 300;
+	color: #838994;
 }
 
 /* Media Queries */
