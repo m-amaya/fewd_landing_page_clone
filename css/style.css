@@ -1,13 +1,13 @@
 /* TEMP STYLES */
 
 body {
-	background-color: LightGray;
+	/*background-color: LightGray;*/
 	min-height: 3000px;
 }
 
-/*.masthead {
+body {
 	border: 1px solid Chocolate;
-}*/
+}
 
 /* Main Styles */
 
@@ -25,12 +25,38 @@ body {
 	font-weight: 400;
 }
 
+nav,
+.masthead,
+h1,
+h2,
+.cases {
+	width: 100%;
+}
+
+h1,
+h2,
+h3 {
+	text-align: center;
+	font-weight: 300;
+}
+
+h1 {
+	font-size: 3.125rem;
+}
+
+h2 {
+	font-size: 2.75rem;
+}
+
+h3 {
+	font-size: 1.563rem;
+}
+
 /* Navigation */
 
 nav {
 	background-color: #fff;
 	position: fixed;
-	width: 100%;
 	z-index: 99;
 }
 
@@ -89,30 +115,20 @@ nav {
 .masthead {
 	position: absolute;
 	top: 70px;
-	width: 100%;
 	min-height: 665px;
 	background: #eee url("../img/cover.jpg") center center no-repeat;
 	background-size: cover;
 	color: #fff;
 }
 
-.masthead h1,
-.masthead h2 {
-	width: 100%;
-	text-align: center;
-	font-weight: 300;
-}
-
 .masthead h1 {
 	margin-top: 15.5rem;
 	margin-bottom: 0;
-	font-size: 3.125rem;
 }
 
 .masthead h2 {
 	margin-top: 1.25rem;
 	margin-bottom: 0;
-	font-size: 1.563rem;
 }
 
 .big-button {
@@ -134,6 +150,28 @@ nav {
 	background-color: #d9400e;
   	border-color: #cf3d0e;
   	cursor: pointer;
+}
+
+/* Page Content */
+
+.cases {
+	position: absolute;
+	top: 735px;
+}
+
+.page-content {
+	padding: 5.875rem 0 0;
+}
+
+.devices {
+	list-style: none;
+}
+
+.devices li {
+	display: inline-block;
+	float: left;
+	width: 30%;
+	margin: 0 1%;
 }
 
 /* Media Queries */
